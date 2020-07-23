@@ -1,0 +1,16 @@
+target/
+scripts/
+
+Run.*
+
+.idea
+*.iml
+
+*.swp
+
+.DS_Store
+
+/tmp
+
+metastore_db/
+derby.log
