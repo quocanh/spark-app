@@ -2,9 +2,9 @@ package org.quoc_anh.app
 
 import org.scalatest.FunSpec
 
-class ConfigSpec
+class ConfigTest
   extends FunSpec
-    with SpecWrapper {
+    with TestWrapper {
 
   describe("get") {
 
@@ -20,6 +20,7 @@ class ConfigSpec
     import app.spark.implicits._
 
     it("create a dataframe and show it") {
+      println("Spark version = " + app.spark.version)
       val df = Seq((1,"a")).toDF("col1", "col2")
       df.show
       assert(1 == 1)

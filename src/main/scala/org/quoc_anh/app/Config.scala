@@ -24,10 +24,10 @@ object Config {
   // ********************************************************
 
   // Various predefined paths and buckets
-  val DEVELOPMENT_S3_BUCKET = "s3a://mdv-sandbox/dolphins/philly"
-  val PRODUCTION_S3_BUCKET = "s3a://mdv-philly"
-  val DEVELOPMENT_S3_DIMENSION_BUCKET = "s3a://mdv-cyclops/philly/dim/"
-  val PRODUCTION_S3_DIMENSION_BUCKET = "s3a://mdv-cyclops/philly/dim/"
+  val DEVELOPMENT_S3_BUCKET = "s3a://my-sandbox/philly"
+  val PRODUCTION_S3_BUCKET = "s3a://my-prod/philly"
+  val DEVELOPMENT_S3_DIMENSION_BUCKET = "s3a://my-sandboxs/philly/dim/"
+  val PRODUCTION_S3_DIMENSION_BUCKET = "s3a://my-prod/philly/dim/"
 
   def detectEnvironment() = {
     val x: String = if (sys.props.get("testing") == Some("true")) {
